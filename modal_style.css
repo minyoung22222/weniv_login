@@ -11,7 +11,7 @@ h1 {
     width: 520px;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
-    background-color: lavender;
+    background-color: #fff;
 }
 
 .header {
@@ -23,13 +23,124 @@ h1 {
 }
 
 .main {
-    padding: 26px 24px 24px 24px;
+    padding: 26px 24px 30px 24px;
 }
 .question {
     font-size: 20px;
     margin-bottom:24px;
 }
 
-.id {
+label {
+    display: none;
+}
+
+.id, .pw {
     width: 472px;
+    padding: 15px 16px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.id {
+    margin-bottom: 10px;
+}
+
+.pw {
+    margin-bottom: 17px;
+}
+
+.keep {
+    display: flex;
+    align-items: center;
+}
+
+.login_keep {
+    margin-left: 8px;
+    color: #767676;
+}
+
+.login_btn {
+    width: 472px;
+    padding: 14px;
+    margin: 21px 0 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.join_find {
+    text-align: center;
+}
+
+.join, .find {
+    font-size: 14px;
+    text-decoration: none;
+    color: #767676;
+}
+
+.join:after {
+    content: '|';
+    height: 18px;
+    margin: 12px;
+    font-size: 14px;
+}
+
+.or {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #767676;
+}
+
+.or:before {
+    content: '';
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+
+.social {
+    padding: 0px 24px;
+}
+
+.goo, .fac, .nav, .kak {
+    display: block;
+    width: 472px;
+    padding: 15px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    text-align: center;
+    color: #767676;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.fac {
+    border: 1px solid #2D9CDB;;
+}
+
+.nav {
+    border: 1px solid #00BF18;
+}
+
+.kak {
+    border: 1px solid #F2C94C;
+}
+
+.close_btn{
+    float: right;
+    border: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.close {
+    margin-right: 24px;
+    width: 16px;
+    height: 16px;
+    
 }

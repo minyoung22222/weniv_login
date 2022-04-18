@@ -10,14 +10,36 @@
 <body>
     <section class="container">
         <header class="header">
-            <span class="login">로그인 또는 회원가입</sp>
+            <span class="login">로그인 또는 회원가입</span>
+            <button class="close_btn">
+                <img class="close" src="img/close.png" alt="close">
+            </button>
+            
         </header>
         <main class="main">
             <p class="question">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
             <label for="id">아이디</label>
-            <input class="id" type="text">
+            <input class="id" type="text" placeholder="아이디">
+            <label for="pw">비밀번호</label>
+            <input class="pw" type="text" placeholder="비밀번호">
+            <section class="keep">
+                <img src="img/check-box.png" alt="">
+                <span class="login_keep">로그인 상태 유지</span>
+            </section>
+            <button class="login_btn">로그인</button>
+            <section class="join_find">
+                <a class="join" href="#">회원가입</a>
+                <a class="find" href="#">아이디/비밀번호 찾기</a>
+            </section>
+            
         </main>
-        <footer>footer</footer>
+        <footer class="social">
+            <p class="or">또는</p>
+            <a class="goo" href="#">구글 계정으로 로그인</a>
+            <a class="fac" href="#">페이스북 계정으로 로그인</a>
+            <a class="nav" href="#">네이버 계정으로 로그인</a>
+            <a class="kak" href="#">카카오톡 계정으로 로그인</a>
+        </footer>
     </section>
 </body>
 </html>
