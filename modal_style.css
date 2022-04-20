@@ -7,7 +7,7 @@ h1 {
 }
 
 .container {
-    margin: 200px auto;
+    margin: 100px auto;
     width: 520px;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
@@ -96,41 +96,82 @@ label {
     color: #767676;
 }
 
-.or:before {
+.or:before, .or:after {
+    display: inline-block;
     content: '';
     width: 210px;
     height: 1px;
+    vertical-align: middle;
     background-color: #C4C4C4;
 }
+.or:before {
+    margin-right: 12px;
+}
+.or:after {
+    margin-left: 12px;
+}
+
 
 .social {
     padding: 0px 24px;
 }
 
-.goo, .fac, .nav, .kak {
+a[class^="link"] {
     display: block;
     width: 472px;
     padding: 15px;
     margin-bottom: 25px;
     text-decoration: none;
     text-align: center;
+    line-height: 28px;
     color: #767676;
-    border: 1px solid #767676;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-.fac {
-    border: 1px solid #2D9CDB;;
+a[class^="link"]:before {
+    display: block;
+    content: "";
+    width: 28px;
+    height: 28px;
+    float: left;
+    background-size: 48px;
+    background-image: url("img/css_sprites_3.png")
 }
 
-.nav {
+.link_goo {
+    border: 1px solid #767676;
+}
+
+.link_goo:before {
+    background-position: -10px -10px;
+}
+
+.link_fac {
+    border: 1px solid #2D9CDB;
+}
+
+.link_fac:before {
+    background-position: -10px -58px;
+}
+
+.link_nav {
     border: 1px solid #00BF18;
 }
 
-.kak {
+.link_nav:before {
+    background-position: -10px -106px;
+}
+
+
+.link_kak {
     border: 1px solid #F2C94C;
 }
+
+.link_kak:before {
+    background-position: -58px -154px;
+}
+
 
 .close_btn{
     float: right;
